@@ -193,7 +193,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     name: "LinkTree",
-    icon: RiTreeLine, // You can choose a suitable icon
-    href: "https://linktr.ee/wajiht", // Replace with your repo link
+    icon: RiTreeLine,
+    href: "https://linktr.ee/wajiht",
   },
 ];
