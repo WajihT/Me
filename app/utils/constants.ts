@@ -116,7 +116,7 @@ export const workExperiences: WorkExperience[] = [
     company: "Brainlab AG",
     role: "IT Working Student",
     description: `
-      Building scalable backend systems and managing deployments, with occasional frontend development.
+      Provided technical support by monitoring and troubleshooting IT issues. Organized and coordinated hardware supply for the integration of subsidiaries (DLM and medPhoton). Documented software functionalities on SharePoint and created tutorial videos. Optimized workflows using Adobe Acrobat Sign and developed Azure Logic Apps for Nintex migration.
     `,
     websiteLink: "https://brainlab.de",
     startDate: "October 2022",
@@ -133,7 +133,7 @@ export const workExperiences: WorkExperience[] = [
     company: "InterFace AG",
     role: "Frontend/Backend Development Working Student",
     description: `
-      Worked on developing and improving the patient portal.
+      Working on developing and improving a patient portal.
     `,
     websiteLink: "https://interface.de",
     startDate: "April 2024",
