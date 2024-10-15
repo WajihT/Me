@@ -1,6 +1,5 @@
 import {
   RiMailLine,
-  RiTwitterXLine,
   RiLinkedinLine,
   RiGithubLine,
   RiFileTextLine,
@@ -185,7 +184,7 @@ export const socialLinks: SocialLink[] = [
     icon: RiGithubLine,
     href: "https://github.com/wijj9",
   },
-  { name: "Resume", icon: RiFileTextLine, href: "/resume/CV.pdf" },
+  { name: "Resume", icon: RiFileTextLine, href: "/resume/Wajih_Lebenslauf.pdf" },
   {
     name: "Repository",
     icon: RiGitRepositoryLine, // You can choose a suitable icon
