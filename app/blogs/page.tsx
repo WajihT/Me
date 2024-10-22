@@ -8,11 +8,11 @@ import { BlogPost } from "../utils/constants";
 export const metadata: Metadata = {
   title: "Blogs - Wajih Tarkhani",
   description:
-    "Read my latest blogs and articles on technology and development.",
+    "Check out the latest blogs/articles on technology and development.",
   openGraph: {
     title: "Blogs - Wajih Tarkhani",
     description:
-      "Read my latest blogs and articles on technology and development.",
+      "Check out the latest blogs/articles on technology and development.",
     url: "https://wajih.info/blogs",
     images: "https://wajih.info/api/og?type=Blogs",
   },
@@ -26,7 +26,7 @@ const getBlogPosts = (): BlogPost[] => {
   const blogPosts = files.map((filename) => {
     const filePath = path.join(contentDirectory, filename);
     const fileContents = fs.readFileSync(filePath, "utf-8");
-    const { data } = matter(fileContents); // Extract frontmatter
+    const { data } = matter(fileContents);
 
     return {
       id: filename.replace(".md", ""),
@@ -43,7 +43,6 @@ const getBlogPosts = (): BlogPost[] => {
   return blogPosts;
 };
 
-// Main blog page component (Server component)
 export default async function BlogPage() {
   const blogPosts = getBlogPosts(); // Fetch blog post metadata
 

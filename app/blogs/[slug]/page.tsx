@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import React from "react";
-import { RiCalendarLine, RiTimeLine, RiUser3Line } from "react-icons/ri";
+import { RiCalendarLine, RiTimeLine } from "react-icons/ri";
 import { unified } from "unified";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
