@@ -30,8 +30,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Wajih Tarkhani",
     description: "Building stuff people want or I find interesting and fun to mess around with",
-    url: "https://yugbhanushali.com",
-    images: "https://yugbhanushali.com/api/og",
+    url: "https://wajih.info",
+    images: "https://wajih.info/api/og",
     siteName: "Wajih Tarkhani",
     locale: "en_US",
     type: "website",

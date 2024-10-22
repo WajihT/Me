@@ -8,8 +8,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Projects - Wajih Tarkhani",
     description: "Explore my projects and contributions.",
-    url: "https://yugbhanushali.com/projects",
-    images: "https://yugbhanushali.com/api/og?type=Projects",
+    url: "https://wajih.info/projects",
+    images: "https://wajih.info/api/og?type=Projects",
   },
 };
 

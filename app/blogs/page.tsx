@@ -13,8 +13,8 @@ export const metadata: Metadata = {
     title: "Blogs - Wajih Tarkhani",
     description:
       "Read my latest blogs and articles on technology and development.",
-    url: "https://yugbhanushali.com/blogs",
-    images: "https://yugbhanushali.com/api/og?type=Blogs",
+    url: "https://wajih.info/blogs",
+    images: "https://wajih.info/api/og?type=Blogs",
   },
 };
 

@@ -97,7 +97,7 @@ export const projects: Project[] = [
         "Developed a subscription tracking app to help users manage recurring subscriptions, providing features like start date, recurrence, and payment method tracking.",
     technologies: ["JavaScript", "TypeScript", "CSS"],
     liveLink: "https://wajih.site",
-    githubLink: "https://github.com/YugBhanushali/webwall",
+    githubLink: "https://github.com/wijj9/Subscriptions",
   },
   {
     title: "Task List",

@@ -10,7 +10,7 @@ export default function Home() {
           Hey, I'm a 23-year-old Computer Science Student, Goldfinch and Canary lover,
           currently studying at TUM (Technical University of Munich) and currently working as a Working Student at InterFace.
           I’m dedicated to build products that make a difference even a small one in someones daily life or let me have fun
-          while
+          while learning about new technologies.
         </div>
 
         {/* Skills section */}
