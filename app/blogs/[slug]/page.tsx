@@ -8,6 +8,7 @@ import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import rehypeStringify from "rehype-stringify";
 import rehypePrettyCode from "rehype-pretty-code";
+import rehypeSlug from "rehype-slug";
 
 // Utility function to get all blog posts metadata
 const getBlogPosts = () => {
@@ -52,6 +53,7 @@ const renderMarkdown = async (content: string) => {
   const result = await unified()
     .use(remarkParse) // Parse markdown to AST
     .use(remarkRehype) // Transform markdown AST to HTML AST
+    .use(rehypeSlug) // Adds ids to headings for links
     .use(rehypePrettyCode, {
       theme: "dracula", // Syntax highlighting theme
     })

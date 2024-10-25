@@ -9,9 +9,7 @@ tags: ["CPTS", "OSCP", "HTB", "Pentesting", "Certifications"]
 
 Certifications are a valuable asset in the cybersecurity industry, demonstrating your expertise and commitment to continuous learning. Two popular certifications in the field of penetration testing are the **Certified Penetration Testing Specialist (CPTS)** and the **Offensive Security Certified Professional (OSCP)**. Both certifications are well-respected and recognized in the industry, but they have distinct differences in terms of content, difficulty, and focus areas.
 
-**POSTS**
-
-CPTS vs OSCP: A Retrospective
+CPTS vs OSCP
 =============================
 
 *   [0.0 Introduction](#00-introduction)
