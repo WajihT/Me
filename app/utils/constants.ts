@@ -3,7 +3,7 @@ import {
   RiLinkedinLine,
   RiGithubLine,
   RiFileTextLine,
-  RiGitRepositoryLine, RiTreeLine,
+  RiGitRepositoryLine, RiTreeLine, RiTimerLine,
 } from "react-icons/ri";
 
 export interface Project {
@@ -50,6 +50,14 @@ export const projects: Project[] = [
     technologies: ["JavaScript", "CSS", "HTML"],
     liveLink: "https://wijj9.github.io/Game_Engine/index.html",
     githubLink: "https://github.com/wijj9/Game_Engine",
+  },
+  {
+    title: "Decrypt Sequence",
+    description:
+        "Solve the sequence and to get redirected to the hidden Search Engine.",
+    technologies: ["JavaScript", "CSS", "HTML"],
+    liveLink: "https://wijj9.github.io/Decypt_Seq/",
+    githubLink: "https://github.com/wijj9/Decypt_Seq/",
   },
   {
     title: "Gamma Correction (beta version)",
@@ -139,7 +147,7 @@ export const workExperiences: WorkExperience[] = [
     endDate: null,
     currentlyWorking: true,
     technologies: [
-      "React.js",
+      "Angular",
       "Java",
       "JavaScript",
       "TypeScript",
@@ -153,6 +161,7 @@ export const skills = [
   "Next.js",
   "React",
   "Node.js",
+  "Angular",
   "Java",
   "MySQL",
   "PostgreSQL",
@@ -194,5 +203,10 @@ export const socialLinks: SocialLink[] = [
     name: "LinkTree",
     icon: RiTreeLine,
     href: "https://linktr.ee/wajiht",
+  },
+  {
+    name: "Old Personal Website",
+    icon: RiTimerLine,
+    href: "https://wajihtarkhani.site",
   },
 ];
