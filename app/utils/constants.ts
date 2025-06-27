@@ -145,7 +145,7 @@ export const workExperiences: WorkExperience[] = [
     websiteLink: "https://interface.de",
     startDate: "April 2024",
     endDate: "Mars 2025",
-    currentlyWorking: true,
+    currentlyWorking: false,
     technologies: [
       "Angular",
       "Java",
