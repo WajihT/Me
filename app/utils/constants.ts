@@ -156,9 +156,9 @@ export const workExperiences: WorkExperience[] = [
   },
   {
     company: "Brainlab AG",
-    role: "Working Student – Strategic Digital & IT",
+    role: "Working Student – IT Working Student",
     description: `
-      Resumed work with the IT and software development team. Supporting ongoing projects, automating workflows, and contributing to internal tool development and process optimization.
+      Currently working with the Strategic and Digital IT team. Assisting in project management and contributing to the introduction of SuccessFactors services as an HR solution within the company.
     `,
     websiteLink: "https://brainlab.de",
     startDate: "Apr 2025",
