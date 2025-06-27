@@ -7,7 +7,7 @@ export default function Home() {
     <div className="flex flex-col w-full sm:w-[100%] md:w-[70%] lg:w-[50%] p-5 sm:p-2 md:p-4 lg:p-5 mt-3">
       <div>
         <div className="flex w-full text-[14px] sm:text-[16px] text-justify">
-          Hey, I'm a 23-year-old Computer Science Student, Goldfinch and Canary lover,
+          Hey, I'm a 24-year-old Computer Science Student, Goldfinch and Canary lover,
           currently studying at TUM (Technical University of Munich) and currently working as a Working Student at InterFace.
           I’m dedicated to build products that make a difference even a small one in someones daily life or let me have fun
           while learning about new technologies.

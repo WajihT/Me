@@ -144,7 +144,7 @@ export const workExperiences: WorkExperience[] = [
     `,
     websiteLink: "https://interface.de",
     startDate: "April 2024",
-    endDate: null,
+    endDate: "Mars 2025",
     currentlyWorking: true,
     technologies: [
       "Angular",
@@ -152,6 +152,24 @@ export const workExperiences: WorkExperience[] = [
       "JavaScript",
       "TypeScript",
       "Node.js",
+    ],
+  },
+  {
+    company: "Brainlab AG",
+    role: "Working Student – Strategic Digital & IT",
+    description: `
+      Resumed work with the IT and software development team. Supporting ongoing projects, automating workflows, and contributing to internal tool development and process optimization.
+    `,
+    websiteLink: "https://brainlab.de",
+    startDate: "Apr 2025",
+    endDate: null,
+    currentlyWorking: true,
+    technologies: [
+      "SuccessFactors",
+      "TypeScript",
+      "ITSM",
+      "Salesforce",
+      "SharePoint",
     ],
   },
 ];
@@ -193,7 +211,7 @@ export const socialLinks: SocialLink[] = [
     icon: RiGithubLine,
     href: "https://github.com/wijj9",
   },
-  { name: "Resume", icon: RiFileTextLine, href: "/resume/Wajih_Lebenslauf.pdf" },
+  { name: "Resume", icon: RiFileTextLine, href: "/resume/cv1.pdf" },
   {
     name: "Repository",
     icon: RiGitRepositoryLine, // You can choose a suitable icon
