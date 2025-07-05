@@ -184,6 +184,8 @@ export const skills = [
   "MySQL",
   "PostgreSQL",
   "MongoDB",
+  "PowerBI",
+  "Metasploit",
   "Python",
   "C",
   "C++",
@@ -211,7 +213,7 @@ export const socialLinks: SocialLink[] = [
     icon: RiGithubLine,
     href: "https://github.com/wijj9",
   },
-  { name: "Resume", icon: RiFileTextLine, href: "/resume/cv1.pdf" },
+  { name: "Resume", icon: RiFileTextLine, href: "/resume/cv2.pdf" },
   {
     name: "Repository",
     icon: RiGitRepositoryLine, // You can choose a suitable icon
