@@ -120,7 +120,7 @@ export const projects: Project[] = [
 
 export const workExperiences: WorkExperience[] = [
   {
-    company: "Brainlab AG",
+    company: "Brainlab SE",
     role: "IT Working Student",
     description: `
       Provided technical support by monitoring and troubleshooting IT issues. Organized and coordinated hardware supply for the integration of subsidiaries (DLM and medPhoton). Documented software functionalities on SharePoint and created tutorial videos. Optimized workflows using Adobe Acrobat Sign and developed Azure Logic Apps for Nintex migration.
@@ -155,7 +155,7 @@ export const workExperiences: WorkExperience[] = [
     ],
   },
   {
-    company: "Brainlab AG",
+    company: "Brainlab SE",
     role: "Working Student – IT Working Student",
     description: `
       Currently working with the Strategic and Digital IT team. Assisting in project management and contributing to the introduction of SuccessFactors services as an HR solution within the company.
