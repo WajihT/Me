@@ -41,7 +41,7 @@ export async function GET(req: Request) {
               textAlign: "left",
             }}
           >
-            <b>Yug Bhanushali {type ? "-" : ""}</b>
+            <b>Wajih Tarkhani {type ? "-" : ""}</b>
           </div>
           <div
             style={{
