@@ -42,7 +42,7 @@ export default function Header() {
       .split("/")
       .slice(0, 2)
       .filter((segment) => segment !== "");
-    let breadcrumbs = [{ name: "Wajih Tarkhani", path: "/" }];
+    let breadcrumbs = [{ name: "Wajih Tarkhani", path: "/index.html" }];
 
     pathSegments.forEach((segment, index) => {
       breadcrumbs.push({
