@@ -8,6 +8,7 @@ import {
   RiTimeLine,
   RiUser3Line,
 } from "react-icons/ri";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 interface BlogPost {
   link: string;

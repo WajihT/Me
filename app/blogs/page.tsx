@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import BlogPostItem from "@/components/BlogPostItem";
 import { Metadata } from "next";
 import { BlogPost } from "../utils/constants";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   title: "Blogs - Wajih Tarkhani",

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 import { motion } from "framer-motion";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import {
   RiHome4Line,
   RiBriefcase2Line,
