@@ -44,6 +44,14 @@ export interface SocialLink {
 
 export const projects: Project[] = [
   {
+    title: "F1 Analytics",
+    description:
+        "F1 Analytics is a dynamic web dashboard for visualizing Formula 1 data. It provides insights into race results, driver and team standings, lap times, and session analytics—powered by FastF1 and Supabase for real-time performance data. Built with a custom FastAPI backend and a responsive frontend.",
+    technologies: ["React", "CSS", "HTML", "PostgreSQL", "Node.js"],
+    liveLink: "https://f1analytics-two.vercel.app/",
+    githubLink: "https://github.com/wijj9/F1analytics",
+  },
+  {
     title: "My Search Engine",
     description:
         "Developed a search engine that efficiently indexes web pages and delivers accurate search results. Focused on optimizing search algorithms and delivering relevant information.",
@@ -58,14 +66,6 @@ export const projects: Project[] = [
     technologies: ["JavaScript", "CSS", "HTML"],
     liveLink: "https://wijj9.github.io/Decypt_Seq/",
     githubLink: "https://github.com/wijj9/Decypt_Seq/",
-  },
-  {
-    title: "Gamma Correction (beta version)",
-    description:
-        "Built a gamma correction tool that adjusts the brightness and contrast of images, allowing users to process and enhance visual data with customizable parameters.",
-    technologies: ["C", "Python", "JavaScript", "HTML", "Makefile"],
-    liveLink: "https://gamma-correction.onrender.com/",
-    githubLink: "https://github.com/wijj9/Gamma_Correction",
   },
   {
     title: "Portfolio V1",
@@ -114,6 +114,14 @@ export const projects: Project[] = [
     technologies: ["JavaScript", "TypeScript", "CSS"],
     liveLink: "https://wijj9.github.io/TaskList",
     githubLink: "https://github.com/wijj9/Game_Engine",
+  },
+  {
+    title: "Gamma Correction (beta version)",
+    description:
+        "Built a gamma correction tool that adjusts the brightness and contrast of images, allowing users to process and enhance visual data with customizable parameters.",
+    technologies: ["C", "Python", "JavaScript", "HTML", "Makefile"],
+    liveLink: "https://gamma-correction.onrender.com/",
+    githubLink: "https://github.com/wijj9/Gamma_Correction",
   },
 ];
 
