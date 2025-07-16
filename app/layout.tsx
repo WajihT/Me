@@ -14,7 +14,7 @@ import Footer from "@/components/Footer";
 import { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import { GeistMono } from "geist/font";
-import { SpeedInsights } from "@vercel/speed-insights/react"
+
 
 const inter = Source_Code_Pro({
   subsets: ["latin"],

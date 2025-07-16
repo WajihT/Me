@@ -3,7 +3,7 @@ import { RiExternalLinkLine, RiFolder2Line } from "react-icons/ri";
 import { TbBrandGithub } from "react-icons/tb";
 import { motion } from "framer-motion";
 import { Project } from "@/app/utils/constants";
-import { SpeedInsights } from "@vercel/speed-insights/react"
+
 
 export function ProjectItem({
   project,

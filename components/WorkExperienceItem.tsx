@@ -2,7 +2,7 @@
 import { RiBriefcase2Line, RiExternalLinkLine } from "react-icons/ri";
 import { motion } from "framer-motion";
 import { WorkExperience } from "@/app/utils/constants";
-import { SpeedInsights } from "@vercel/speed-insights/react"
+
 
 export function WorkExperienceItem({
   experience,

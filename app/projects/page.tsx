@@ -1,7 +1,7 @@
 import { ProjectItem } from "@/components/ProjectItem";
 import { Project, projects } from "../utils/constants";
 import { Metadata } from "next";
-import { SpeedInsights } from "@vercel/speed-insights/react"
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: "Projects - Wajih Tarkhani",

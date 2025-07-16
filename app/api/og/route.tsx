@@ -1,5 +1,5 @@
 import { ImageResponse } from "next/og";
-import { SpeedInsights } from "@vercel/speed-insights/react"
+
 // App router includes @vercel/og.
 
 export async function GET(req: Request) {

@@ -6,7 +6,7 @@ import { useTheme } from "next-themes";
 import { usePathname } from "next/navigation";
 import { RiSunLine, RiMoonLine } from "react-icons/ri";
 import { FaCircle } from "react-icons/fa";
-import { SpeedInsights } from "@vercel/speed-insights/react"
+
 
 export default function Header() {
   const [currentTime, setCurrentTime] = useState(new Date());
