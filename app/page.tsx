@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { skills } from "./utils/constants";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 
 export default function Home() {

@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { SocialLink, socialLinks } from "../utils/constants";
 import { RiExternalLinkLine } from "react-icons/ri";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function SocialLinkItem({ link, index }: { link: SocialLink; index: number }) {
   return (
