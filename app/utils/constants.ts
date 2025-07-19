@@ -46,7 +46,7 @@ export const projects: Project[] = [
   {
     title: "F1 Analytics",
     description:
-        "F1 Analytics is a dynamic web dashboard for visualizing Formula 1 data. It provides insights into race results, driver and team standings, lap times, and session analytics—powered by FastF1 and Supabase for real-time performance data. Built with a custom FastAPI backend and a responsive frontend.",
+        "F1 Analytics is a dynamic Web dashboard for visualizing Formula 1 data. It provides insights into race results, driver and team standings, lap times, and session analytics—powered by FastF1 and Supabase for real-time performance data. Built with a custom FastAPI backend and a responsive frontend.",
     technologies: ["React", "CSS", "HTML", "PostgreSQL", "Node.js"],
     liveLink: "https://f1analytics.online",
     githubLink: "https://github.com/wijj9/F1analytics",
