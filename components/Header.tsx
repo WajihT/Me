@@ -43,7 +43,7 @@ export default function Header() {
       .split("/")
       .slice(0, 2)
       .filter((segment) => segment !== "");
-    let breadcrumbs = [{ name: "Wajih Tarkhani", path: "/index.html" }];
+    let breadcrumbs = [{ name: "Wajih Tarkhani", path: "https://terminal-beta-black.vercel.app/" }];
 
     pathSegments.forEach((segment, index) => {
       breadcrumbs.push({

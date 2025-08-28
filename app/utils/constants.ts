@@ -1,240 +1,273 @@
 import {
-  RiMailLine,
-  RiLinkedinLine,
-  RiGithubLine,
-  RiFileTextLine,
-  RiGitRepositoryLine, RiTreeLine, RiTimerLine,
+    RiMailLine,
+    RiLinkedinLine,
+    RiGithubLine,
+    RiFileTextLine,
+    RiGitRepositoryLine, RiTreeLine, RiTimerLine,
 } from "react-icons/ri";
+import {GiCarWheel} from "react-icons/gi";
+import {FaTwitch} from "react-icons/fa";
 
 export interface Project {
-  title: string;
-  description: string;
-  technologies: string[];
-  liveLink: string;
-  githubLink: string;
+    title: string;
+    description: string;
+    technologies: string[];
+    liveLink: string;
+    githubLink: string;
 }
 
 export interface BlogPost {
-  id: string;
-  title: string;
-  description: string;
-  tags: string[];
-  publishedDate: string;
-  readTime: string;
-  author: string;
-  link: string;
+    id: string;
+    title: string;
+    description: string;
+    tags: string[];
+    publishedDate: string;
+    readTime: string;
+    author: string;
+    link: string;
 }
 
 export interface WorkExperience {
-  company: string;
-  role: string;
-  description: string;
-  websiteLink: string;
-  endDate: string | null;
-  startDate: string;
-  currentlyWorking: boolean;
-  technologies: string[];
+    company: string;
+    role: string;
+    description: string;
+    websiteLink: string;
+    endDate: string | null;
+    startDate: string;
+    currentlyWorking: boolean;
+    technologies: string[];
 }
 
 export interface SocialLink {
-  name: string;
-  icon: React.ElementType;
-  href: string;
+    name: string;
+    icon: React.ElementType;
+    href: string;
 }
 
 export const projects: Project[] = [
-  {
-    title: "F1 Analytics",
-    description:
-        "F1 Analytics is a dynamic Web dashboard for visualizing Formula 1 data. It provides insights into race results, driver and team standings, lap times, and session analytics—powered by FastF1 and Supabase for real-time performance data. Built with a custom FastAPI backend and a responsive frontend.",
-    technologies: ["React", "CSS", "HTML", "PostgreSQL", "Node.js"],
-    liveLink: "https://f1analytics.online",
-    githubLink: "https://github.com/wijj9/F1analytics",
-  },
-  {
-    title: "My Search Engine",
-    description:
-        "Developed a search engine that efficiently indexes web pages and delivers accurate search results. Focused on optimizing search algorithms and delivering relevant information.",
-    technologies: ["JavaScript", "CSS", "HTML"],
-    liveLink: "https://wijj9.github.io/Game_Engine/index.html",
-    githubLink: "https://github.com/wijj9/Game_Engine",
-  },
-  {
-    title: "Decrypt Sequence",
-    description:
-        "Solve the sequence and to get redirected to the hidden Search Engine.",
-    technologies: ["JavaScript", "CSS", "HTML"],
-    liveLink: "https://wijj9.github.io/Decypt_Seq/",
-    githubLink: "https://github.com/wijj9/Decypt_Seq/",
-  },
-  {
-    title: "Portfolio V1",
-    description:
-        "Designed and implemented a personal portfolio website to showcase projects and skills, incorporating responsive design principles and interactive elements.",
-    technologies: ["JavaScript", "CSS", "HTML", "PHP"],
-    liveLink: "https://wajihtarkhani.site",
-    githubLink: "https://github.com/wijj9/Home_Page",
-  },
-  {
-    title: "Password Generator",
-    description:
-        "Created a password generator that produces secure and customizable passwords, including options for length, character sets, and special symbols.",
-    technologies: ["TypeScript", "Node.js", "NPM"],
-    liveLink: "https://wijj9.github.io/Game_Engine/Home/Games/Password_Generator/index.html",
-    githubLink: "https://github.com/wijj9/Game_Engine",
-  },
-  {
-    title: "Rock Paper Scissors",
-    description:
-        "Developed an interactive rock-paper-scissors game with a simple interface, using JavaScript to handle game logic and random opponent choices.",
-    technologies: ["Next.js", "TypeScript", "PostgreSQL"],
-    liveLink: "https://wijj9.github.io/Game_Engine/Home/Games/Rock_Paper_Scissors/index.html",
-    githubLink: "https://github.com/wijj9/Game_Engine",
-  },
-  {
-    title: "Create your Signature",
-    description:
-        "Implemented a web-based signature generator that allows users to create personalized digital signatures with various fonts and styles.",
-    technologies: ["JavaScript", "TypeScript", "CSS"],
-    liveLink: "https://wijj9.github.io/Game_Engine/Home/Games/Signature_Generator/index.html",
-    githubLink: "https://github.com/wijj9/Game_Engine",
-  },
-  {
-    title: "Subscriptions Tracker",
-    description:
-        "Developed a subscription tracking app to help users manage recurring subscriptions, providing features like start date, recurrence, and payment method tracking.",
-    technologies: ["JavaScript", "TypeScript", "CSS"],
-    liveLink: "https://wajih.site",
-    githubLink: "https://github.com/wijj9/Subscriptions",
-  },
-  {
-    title: "Task List",
-    description:
-        "Built a task management tool that allows users to organize, prioritize, and track tasks, featuring a simple UI for quick task creation and progress tracking.",
-    technologies: ["JavaScript", "TypeScript", "CSS"],
-    liveLink: "https://wijj9.github.io/TaskList",
-    githubLink: "https://github.com/wijj9/Game_Engine",
-  },
-  {
-    title: "Gamma Correction (beta version)",
-    description:
-        "Built a gamma correction tool that adjusts the brightness and contrast of images, allowing users to process and enhance visual data with customizable parameters.",
-    technologies: ["C", "Python", "JavaScript", "HTML", "Makefile"],
-    liveLink: "https://gamma-correction.onrender.com/",
-    githubLink: "https://github.com/wijj9/Gamma_Correction",
-  },
+    {
+        title: "F1 Analytics",
+        description:
+            "F1 Analytics is a dynamic Web dashboard for visualizing Formula 1 data. It provides insights into race results, driver and team standings, lap times, and session analytics—powered by FastF1 and Supabase for real-time performance data. Built with a custom FastAPI backend and a responsive frontend.",
+        technologies: ["React", "CSS", "HTML", "PostgreSQL", "Node.js"],
+        liveLink: "https://f1analytics.online",
+        githubLink: "https://f1analytics.online",
+    },
+    {
+        title: "My Terminal",
+        description:
+            "My Portfolio in a Terminal. A fun project that simulates a terminal interface to showcase my portfolio, skills, and projects. Built with React and TypeScript, it offers an interactive experience for users to explore my work through command-line inputs.",
+        technologies: ["React", "TypeScript", "CSS", "HTML"],
+        liveLink: "https://terminal-beta-black.vercel.app/",
+        githubLink: "https://github.com/WajihT/Terminal",
+    },
+    {
+        title: "My Toolkit",
+        description:
+            "My Toolkit is the best collection of developer utilities that I use on a daily basis.",
+        technologies: ["React", "TypeScript", "CSS", "HTML"],
+        liveLink: "https://my-toolkit-ecru.vercel.app/",
+        githubLink: "https://github.com/WajihT/MyToolkit",
+    },
+    {
+        title: "Glance Dashboard",
+        description:
+            "My Toolkit is the best collection of developer utilities that I use on a daily basis. Runs easily on docker and can be self-hosted to be accessed anywhere.",
+        technologies: ["React", "TypeScript", "CSS", "HTML"],
+        liveLink: "https://github.com/WajihT/MyToolkit",
+        githubLink: "https://github.com/WajihT/MyToolkit",
+    },
+    /*{
+      title: "My Search Engine",
+      description:
+          "Developed a search engine that efficiently indexes web pages and delivers accurate search results. Focused on optimizing search algorithms and delivering relevant information.",
+      technologies: ["JavaScript", "CSS", "HTML"],
+      liveLink: "https://wajihT.github.io/Game_Engine/index.html",
+      githubLink: "https://github.com/wajihT/Game_Engine",
+    },
+    {
+      title: "Decrypt Sequence",
+      description:
+          "Solve the sequence and to get redirected to the hidden Search Engine.",
+      technologies: ["JavaScript", "CSS", "HTML"],
+      liveLink: "https://wajihT.github.io/Decypt_Seq/",
+      githubLink: "https://github.com/wajihT/Decypt_Seq/",
+    },
+    {
+      title: "Portfolio V1",
+      description:
+          "Designed and implemented a personal portfolio website to showcase projects and skills, incorporating responsive design principles and interactive elements.",
+      technologies: ["JavaScript", "CSS", "HTML", "PHP"],
+      liveLink: "https://wajihtarkhani.site",
+      githubLink: "https://github.com/wajihT/Home_Page",
+    },
+    {
+      title: "Password Generator",
+      description:
+          "Created a password generator that produces secure and customizable passwords, including options for length, character sets, and special symbols.",
+      technologies: ["TypeScript", "Node.js", "NPM"],
+      liveLink: "https://wajihT.github.io/Game_Engine/Home/Games/Password_Generator/index.html",
+      githubLink: "https://github.com/wajihT/Game_Engine",
+    },
+    {
+      title: "Rock Paper Scissors",
+      description:
+          "Developed an interactive rock-paper-scissors game with a simple interface, using JavaScript to handle game logic and random opponent choices.",
+      technologies: ["Next.js", "TypeScript", "PostgreSQL"],
+      liveLink: "https://wajihT.github.io/Game_Engine/Home/Games/Rock_Paper_Scissors/index.html",
+      githubLink: "https://github.com/wajihT/Game_Engine",
+    },
+    {
+      title: "Create your Signature",
+      description:
+          "Implemented a web-based signature generator that allows users to create personalized digital signatures with various fonts and styles.",
+      technologies: ["JavaScript", "TypeScript", "CSS"],
+      liveLink: "https://wajihT.github.io/Game_Engine/Home/Games/Signature_Generator/index.html",
+      githubLink: "https://github.com/wajihT/Game_Engine",
+    },
+    {
+      title: "Subscriptions Tracker",
+      description:
+          "Developed a subscription tracking app to help users manage recurring subscriptions, providing features like start date, recurrence, and payment method tracking.",
+      technologies: ["JavaScript", "TypeScript", "CSS"],
+      liveLink: "https://wajih.site",
+      githubLink: "https://github.com/wajihT/Subscriptions",
+    },
+    {
+      title: "Task List",
+      description:
+          "Built a task management tool that allows users to organize, prioritize, and track tasks, featuring a simple UI for quick task creation and progress tracking.",
+      technologies: ["JavaScript", "TypeScript", "CSS"],
+      liveLink: "https://wajihT.github.io/TaskList",
+      githubLink: "https://github.com/wajihT/Game_Engine",
+    },
+    {
+      title: "Gamma Correction (beta version)",
+      description:
+          "Built a gamma correction tool that adjusts the brightness and contrast of images, allowing users to process and enhance visual data with customizable parameters.",
+      technologies: ["C", "Python", "JavaScript", "HTML", "Makefile"],
+      liveLink: "https://gamma-correction.onrender.com/",
+      githubLink: "https://github.com/wajihT/Gamma_Correction",
+    },*/
 ];
 
 
 export const workExperiences: WorkExperience[] = [
-  {
-    company: "Brainlab SE",
-    role: "IT Working Student",
-    description: `
+    {
+        company: "Brainlab AG",
+        role: "IT Working Student",
+        description: `
       Provided technical support by monitoring and troubleshooting IT issues. Organized and coordinated hardware supply for the integration of subsidiaries (DLM and medPhoton). Documented software functionalities on SharePoint and created tutorial videos. Optimized workflows using Adobe Acrobat Sign and developed Azure Logic Apps for Nintex migration.
     `,
-    websiteLink: "https://brainlab.de",
-    startDate: "October 2022",
-    endDate: "March 2024",
-    currentlyWorking: false,
-    technologies: [
-      "TypeScript",
-      "Python",
-      "Java",
-      "Shell",
-    ],
-  },
-  {
-    company: "InterFace AG",
-    role: "Frontend/Backend Development Working Student",
-    description: `
+        websiteLink: "https://brainlab.de",
+        startDate: "October 2022",
+        endDate: "March 2024",
+        currentlyWorking: false,
+        technologies: [
+            "TypeScript",
+            "Python",
+            "Java",
+            "Shell",
+        ],
+    },
+    {
+        company: "InterFace AG",
+        role: "Frontend/Backend Development Working Student",
+        description: `
       Working on developing and improving a patient portal.
     `,
-    websiteLink: "https://interface.de",
-    startDate: "April 2024",
-    endDate: "Mars 2025",
-    currentlyWorking: false,
-    technologies: [
-      "Angular",
-      "Java",
-      "JavaScript",
-      "TypeScript",
-      "Node.js",
-    ],
-  },
-  {
-    company: "Brainlab SE",
-    role: "Working Student – IT Working Student",
-    description: `
-      Currently working with the Strategic and Digital IT team. Assisting in project management and contributing to the introduction of SuccessFactors services as an HR solution within the company.
+        websiteLink: "https://interface.de",
+        startDate: "April 2024",
+        endDate: "Mars 2025",
+        currentlyWorking: false,
+        technologies: [
+            "Angular",
+            "Java",
+            "JavaScript",
+            "TypeScript",
+            "Node.js",
+        ],
+    },
+    {
+        company: "Brainlab SE",
+        role: "Working Student – IT Working Student",
+        description: `
+      Currently working with the Strategic and Digital IT team. Assisting in project management, process documentation and contributing to the introduction of SuccessFactors services as an HR solution within the company.
     `,
-    websiteLink: "https://brainlab.de",
-    startDate: "Apr 2025",
-    endDate: null,
-    currentlyWorking: true,
-    technologies: [
-      "SuccessFactors",
-      "TypeScript",
-      "ITSM",
-      "Salesforce",
-      "SharePoint",
-    ],
-  },
+        websiteLink: "https://brainlab.de",
+        startDate: "Apr 2025",
+        endDate: null,
+        currentlyWorking: true,
+        technologies: [
+            "SuccessFactors",
+            "TypeScript",
+            "ITSM",
+            "Salesforce",
+            "SharePoint",
+            "PowerBI",
+        ],
+    },
 ];
 export const skills = [
-  "JavaScript",
-  "TypeScript",
-  "Next.js",
-  "React",
-  "Node.js",
-  "Angular",
-  "Java",
-  "MySQL",
-  "PostgreSQL",
-  "MongoDB",
-  "PowerBI",
-  "Metasploit",
-  "Python",
-  "C",
-  "C++",
-  "CSS",
-  "Docker",
-  "AWS",
-  "Git",
-  "Linux",
-  "OOP",
+    "JavaScript",
+    "TypeScript",
+    "Next.js",
+    "React",
+    "Node.js",
+    "Angular",
+    "Java",
+    "MySQL",
+    "PostgreSQL",
+    "MongoDB",
+    "Supabase",
+    "PowerBI",
+    "Metasploit",
+    "Python",
+    "C",
+    "C++",
+    "CSS",
+    "Docker",
+    "AWS",
+    "Git",
+    "Linux",
+    "OOP",
 ];
 
 export const socialLinks: SocialLink[] = [
-  {
-    name: "Email",
-    icon: RiMailLine,
-    href: "wajih.tarkhani.21@gmail.com",
-  },
-  {
-    name: "LinkedIn",
-    icon: RiLinkedinLine,
-    href: "https://www.linkedin.com/in/wajih-tarkhani-18542620b/",
-  },
-  {
-    name: "GitHub",
-    icon: RiGithubLine,
-    href: "https://github.com/wijj9",
-  },
-  { name: "Resume", icon: RiFileTextLine, href: "/resume/cv2.pdf" },
-  {
-    name: "Repository",
-    icon: RiGitRepositoryLine, // You can choose a suitable icon
-    href: "https://github.com/wijj9/MyPortfolio_V2", // Replace with your repo link
-  },
-  {
-    name: "LinkTree",
-    icon: RiTreeLine,
-    href: "https://linktr.ee/wajiht",
-  },
-  {
-    name: "Old Personal Website",
-    icon: RiTimerLine,
-    href: "https://wajihtarkhani.site",
-  },
+    {
+        name: "Contact",
+        icon: RiMailLine,
+        href: "wajih.tarkhani.21@gmail.com",
+    },
+    {
+        name: "LinkedIn",
+        icon: RiLinkedinLine,
+        href: "https://www.linkedin.com/in/wajih-tarkhani-18542620b/",
+    },
+    {
+        name: "F1 Analytics",
+        icon: GiCarWheel,
+        href: "https://github.com/wajihT",
+    },
+    { name: "Resume", icon: RiFileTextLine, href: "/resume/cv2.pdf" },
+    {
+        name: "Repository",
+        icon: RiGitRepositoryLine,
+        href: "https://github.com/wajihT/Me",
+    },
+    {
+        name: "Twitch",
+        icon: FaTwitch,
+        href: "https://www.twitch.tv/bigunit_42",
+    },
+    /*{
+      name: "LinkTree",
+      icon: RiTreeLine,
+      href: "https://linktr.ee/wajiht",
+    },
+    {
+      name: "Old Personal Website",
+      icon: RiTimerLine,
+      href: "https://wajihtarkhani.site",
+    },*/
 ];

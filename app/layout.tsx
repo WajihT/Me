@@ -25,8 +25,8 @@ export const metadata: Metadata = {
   title: "Wajih Tarkhani",
   description: "Building stuff people want or I find interesting and fun to mess around with",
   icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
+    icon: "/favi.png",
+    shortcut: "/favi.png",
   },
   openGraph: {
     title: "Wajih Tarkhani",
