@@ -52,6 +52,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <a rel="me" href="https://infosec.exchange/@BigUnit">Mastodon</a>
+      </head>
       <body className={GeistMono.className}>
         <ThemeProvider
           attribute="class"
