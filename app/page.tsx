@@ -10,8 +10,8 @@ export default function Home() {
       <div>
         <Analytics/>
         <div className="flex w-full text-[14px] sm:text-[16px] text-justify">
-          Hey, I'm a 24-year-old Computer Science Student, Goldfinch and Canary lover,
-          currently studying at TUM (Technical University of Munich) and currently working as a Working Student at Brainlab.
+          Hey, I'm a Computer Science Student, Cybersecurity Enthusiast and Goldfinch and Canary lover,
+          currently studying at TUM (Technical University of Munich) and working as a Working Student at Brainlab.
           I’m dedicated to build products that make a difference even a small one in someones daily life or let me have fun
           while learning about new technologies. I'm also in my journey to get the CPTS (Certified Penetration Testing Specialist) certification.
         </div>
