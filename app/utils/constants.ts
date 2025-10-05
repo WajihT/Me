@@ -6,6 +6,7 @@ import {
     RiGitRepositoryLine, RiTreeLine, RiTimerLine,
 } from "react-icons/ri";
 import {GiCarWheel} from "react-icons/gi";
+import {CircleUser , Linkedin, FileText, BookMarked } from "lucide-react";
 import {FaTwitch} from "react-icons/fa";
 
 export interface Project {
@@ -40,7 +41,8 @@ export interface WorkExperience {
 
 export interface SocialLink {
     name: string;
-    icon: React.ElementType;
+    icon?: React.ElementType;
+    iconImage?: string;
     href: string;
 }
 
@@ -74,8 +76,8 @@ export const projects: Project[] = [
         description:
             "My Toolkit is the best collection of developer utilities that I use on a daily basis. Runs easily on docker and can be self-hosted to be accessed anywhere.",
         technologies: ["React", "TypeScript", "CSS", "HTML"],
-        liveLink: "https://github.com/WajihT/MyToolkit",
-        githubLink: "https://github.com/WajihT/MyToolkit",
+        liveLink: "https://github.com/WajihT/My-Glance",
+        githubLink: "https://github.com/WajihT/My-Glance",
     },
     /*{
       title: "My Search Engine",
@@ -236,31 +238,37 @@ export const skills = [
 export const socialLinks: SocialLink[] = [
     {
         name: "Contact",
-        icon: RiMailLine,
-        href: "wajih.tarkhani.21@gmail.com",
+        icon: CircleUser ,
+        href: "mailto:wajih.tarkhani.21@gmail.com",
     },
     {
         name: "LinkedIn",
-        icon: RiLinkedinLine,
+        icon: Linkedin,
         href: "https://www.linkedin.com/in/wajih-tarkhani-18542620b/",
     },
     {
         name: "F1 Analytics",
-        icon: GiCarWheel,
-        href: "https://github.com/wajihT",
+        iconImage: "/favicon.png",
+        href: "https://f1analytics.online",
     },
-    { name: "Resume", icon: RiFileTextLine, href: "/resume/cv2.pdf" },
+    { name: "Resume", icon: FileText , href: "/resume/cv2.pdf" },
     {
         name: "Repository",
-        icon: RiGitRepositoryLine,
-        href: "https://github.com/wajihT/Me",
+        icon: BookMarked ,
+        href: "https://github.com/wajihT/",
     },
+    {
+        name: "InfoSec",
+        iconImage: "/infosec.png",
+        href: "https://infosec.exchange/@BigUnit",
+    },
+    /*
     {
         name: "Twitch",
         icon: FaTwitch,
         href: "https://www.twitch.tv/bigunit_42",
     },
-    /*{
+    {
       name: "LinkTree",
       icon: RiTreeLine,
       href: "https://linktr.ee/wajiht",

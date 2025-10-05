@@ -31,8 +31,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Wajih Tarkhani",
     description: "Building stuff people want or I find interesting and fun to mess around with",
-    url: "https://wajih.info",
-    images: "https://wajih.info/api/og",
+    url: "https://wajihtarkhani.com",
+    images: "https://wajihtarkhani.com/api/og",
     siteName: "Wajih Tarkhani",
     locale: "en_US",
     type: "website",
@@ -53,9 +53,39 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <a rel="me" href="https://infosec.exchange/@BigUnit">Mastodon</a>
+        <link rel="me" href="https://infosec.exchange/@BigUnit" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Wajih Tarkhani",
+              url: "https://wajihtarkhani.com",
+              jobTitle: "Computer Science Student",
+              worksFor: {
+                "@type": "Organization",
+                name: "Brainlab"
+              },
+              alumniOf: [
+                {
+                  "@type": "Organization",
+                  name: "Technical University of Munich"
+                },
+                {
+                  "@type": "Organization",
+                  name: "University of Augsburg"
+                }
+              ],
+              sameAs: [
+                "https://infosec.exchange/@BigUnit"
+              ],
+              description: "Building stuff people want or I find interesting and fun to mess around with"
+            })
+          }}
+        />
       </head>
-      <body className={GeistMono.className}>
+      <body className={GeistMono.className} suppressHydrationWarning>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"

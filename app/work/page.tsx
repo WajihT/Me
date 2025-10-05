@@ -10,8 +10,8 @@ export const metadata: Metadata = {
     title: "Work - Wajih Tarkhani",
     description:
       "Discover my work experience and the companies I've collaborated with.",
-    url: "https://wajih.info/work",
-    images: "https://wajih.info/api/og?type=Work",
+    url: "https://wajihtarkhani.com/work",
+    images: "https://wajihtarkhani.com/api/og?type=Work",
   },
 };
 

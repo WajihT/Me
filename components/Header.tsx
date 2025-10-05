@@ -9,12 +9,13 @@ import { FaCircle } from "react-icons/fa";
 
 
 export default function Header() {
-  const [currentTime, setCurrentTime] = useState(new Date());
+  const [currentTime, setCurrentTime] = useState<Date | null>(null);
   const { setTheme, theme } = useTheme();
   const [darkMode, setDarkMode] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
+    setCurrentTime(new Date());
     const timer = setInterval(() => {
       setCurrentTime(new Date());
     }, 1000);
@@ -29,6 +30,7 @@ export default function Header() {
   }, [theme]);
 
   function getTimeString() {
+    if (!currentTime) return "--:--:--";
     return (
       currentTime.getHours().toString().padStart(2, "0") +
       ":" +

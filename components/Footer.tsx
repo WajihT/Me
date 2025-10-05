@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 import { motion } from "framer-motion";
+import { Home, FolderClosed , BriefcaseBusiness, PencilLine , GalleryHorizontalEnd   , Users } from "lucide-react";
 
 import {
   RiHome4Line,
@@ -18,15 +19,13 @@ import {
 export default function Footer() {
   const pathname = "/" + usePathname().split("/")[1];
 
-  console.log(pathname);
-
-  const navItems = [
-    { href: "/", icon: RiSquareLine, label: "Home" },
-    { href: "/projects", icon: RiFolder2Line, label: "Projects" },
-    { href: "/work", icon: RiBriefcase2Line, label: "Work" },
-    { href: "/blogs", icon: RiBallPenLine, label: "Blogs" },
-    { href: "/socials", icon: RiLinkM, label: "Socials" },
-  ];
+    const navItems = [
+        { href: "/", icon: Home, label: "Home" },
+        { href: "/projects", icon: FolderClosed, label: "Projects" },
+        { href: "/work", icon: BriefcaseBusiness, label: "Work" },
+        { href: "/blogs", icon: PencilLine , label: "Blogs" },
+        { href: "/socials", icon: GalleryHorizontalEnd , label: "Socials" },
+    ];
 
   return (
     <footer className="fixed bottom-0 left-0 right-0 bg-white dark:bg-black bg-opacity-70 dark:bg-opacity-70 backdrop-blur-md p-4">

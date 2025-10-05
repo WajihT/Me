@@ -14,8 +14,8 @@ export const metadata: Metadata = {
     title: "Blogs - Wajih Tarkhani",
     description:
       "Check out the latest blogs/articles on technology and development.",
-    url: "https://wajih.info/blogs",
-    images: "https://wajih.info/api/og?type=Blogs",
+    url: "https://wajihtarkhani.com/blogs",
+    images: "https://wajihtarkhani.com/api/og?type=Blogs",
   },
 };
 

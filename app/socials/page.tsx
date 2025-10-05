@@ -4,7 +4,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { SocialLink, socialLinks } from "../utils/constants";
 import { RiExternalLinkLine } from "react-icons/ri";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
+import Image from "next/image";
 
 function SocialLinkItem({ link, index }: { link: SocialLink; index: number }) {
   return (
@@ -16,7 +17,11 @@ function SocialLinkItem({ link, index }: { link: SocialLink; index: number }) {
       whileHover={{ x: 5 }}
     >
       <h3 className="text-sm font-semibold mb-0 flex items-center gap-2">
-        <link.icon className="text-gray-600 dark:text-gray-400 text-lg" />
+        {link.iconImage ? (
+          <Image src={link.iconImage} alt={link.name} width={18} height={18} className="text-gray-600 dark:text-gray-400" />
+        ) : link.icon ? (
+          <link.icon className="text-gray-600 dark:text-gray-400 text-lg" />
+        ) : null}
         <span className="">{link.name}</span>
       </h3>
       <div className="flex gap-4">
